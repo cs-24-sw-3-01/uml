@@ -95,18 +95,4 @@ classDiagram
 
 
 
-
-
-
-
-
-
-
-
 ```
-
-<style>
-    body {
-        background: white;
-    }
-</style>
