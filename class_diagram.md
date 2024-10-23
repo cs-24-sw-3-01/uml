@@ -5,7 +5,7 @@ title: Class Diagram
 classDiagram
     direction TB
 
-    Team "1..*" -- "1..*" Employee
+    Team "0..*" -- "1..*" Employee
 
 
 
@@ -14,11 +14,13 @@ classDiagram
     Team -- Calendar
     Employee -- Calendar
 
-    Calendar --o Holiday
+    Calendar --o "1..*" Holiday
 
-    Calendar --o Absence
+    Calendar --o "1..*" Absence
 
     Holiday -- HolidayType
+
+    Absence -- AbsenceType
 
 
 
@@ -28,6 +30,12 @@ classDiagram
         <<enumeration>>
         POLISH_HOLIDAY
         DANISH_HOLIDAY
+    }
+
+    class AbsenceType {
+        <<enumeration>>
+        SICK
+        ABSENT
     }
 
 
@@ -46,22 +54,27 @@ classDiagram
         first_name : String
         last_name : String
         role : String
-        currentCalendarView: Calendar
+        current_calendar_view: Calendar
 
     }
 
     class Absence {
-        startDate : Date
-        endDate : Date
+        note : String
+        absent : AbsentType
+        start_date : Date
+        end_date : Date
 
     }
 
     class Holiday {
+        title : String
         holiday : HolidayType
-
+        start_date : Date
+        end_date : Date
     }
 
     class Calendar {
+
 
     }
 
