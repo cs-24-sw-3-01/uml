@@ -7,11 +7,9 @@ classDiagram
 
     Team "1..*" -- "1..*" Employee
 
-    Team "1" -- "0..*" Absence
 
 
 
-    Employee -- Calendar
 
     Team -- Calendar
     Employee -- Calendar
@@ -35,8 +33,8 @@ classDiagram
 
 
     class Team {
-        members : Array[Employee]
-        admin : Array[Employee]
+        members : Employee[]
+        admins : Employee[]
 
         addMember(user: Employee)
         removeMember(user: Employee)
@@ -45,10 +43,16 @@ classDiagram
     }
 
     class Employee {
+        first_name : String
+        last_name : String
+        role : String
+        currentCalendarView: Calendar
 
     }
 
     class Absence {
+        startDate : Date
+        endDate : Date
 
     }
 
