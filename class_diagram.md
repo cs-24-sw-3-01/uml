@@ -27,7 +27,7 @@ classDiagram
 
 
 
-    class HolidayType {
+    class HolidayType:::styleClass {
         <<enumeration>>
         POLISH_HOLIDAY
         DANISH_HOLIDAY
@@ -104,3 +104,9 @@ classDiagram
 
 
 ```
+
+<style>
+    body {
+        background: white;
+    }
+</style>
