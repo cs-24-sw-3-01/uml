@@ -13,7 +13,8 @@ title: Class Diagram
             'primaryBorderColor': '#211A51',
             'lineColor': '#000',
             'secondaryColor': '#006100',
-            'tertiaryColor': '#fff'
+            'tertiaryColor': '#fff',
+            'mainBkg': '#fff'
         }
     }
 }%%
