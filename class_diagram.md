@@ -22,6 +22,7 @@ classDiagram
 
     Absence -- AbsenceType
 
+    Calendar -- Display
 
 
 
@@ -37,6 +38,14 @@ classDiagram
         SICK
         ABSENT
     }
+
+    class Display {
+        <<enumeration>>
+        DAY
+        WEEK
+        MONTH
+    }
+
 
 
 
@@ -74,9 +83,14 @@ classDiagram
     }
 
     class Calendar {
+        owner : Employee || Team
+        time_zone : String
+        display_mode: Display
 
 
     }
+
+
 
 
 
