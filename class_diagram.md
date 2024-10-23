@@ -2,6 +2,21 @@
 ---
 title: Class Diagram
 ---
+%%{
+    init: {
+        'theme': 'base',
+        'themeVariables': {
+            'darkMode': 'false',
+            'background': '#fff',
+            'primaryColor': '#C8C6D4',
+            'primaryTextColor': '#000',
+            'primaryBorderColor': '#211A51',
+            'lineColor': '#000',
+            'secondaryColor': '#006100',
+            'tertiaryColor': '#fff'
+        }
+    }
+}%%
 classDiagram
     direction TB
 
