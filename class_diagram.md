@@ -7,10 +7,6 @@ classDiagram
 
     Team "0..*" -- "1..*" Employee
 
-
-
-
-
     Team -- Calendar
     Employee -- Calendar
 
